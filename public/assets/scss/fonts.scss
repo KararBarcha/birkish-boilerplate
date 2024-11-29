@@ -1,0 +1,183 @@
+/* You can add global styles to this file, and also import other style files */
+
+// ============================================================
+//                             Fonts
+// ============================================================
+
+/* (((((((((( Primary Font START ))))))))))) */
+@font-face {
+  font-family: PrimaryFont100;
+  src: url(../fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont200;
+  src: url(../fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont300;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont400;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont500;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont600;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont700;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont800;
+  src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFont900;
+  src: url(../fonts/Poppins/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFontBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFontMedium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFontRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PrimaryFontLight;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+/* (((((((((( Primary Font  END  ))))))))))) */
+
+// ============================================================
+//                      Typography
+// ============================================================
+
+/* (((((((((( font-size and font-family START ))))))))))) */
+
+body {
+  font-family: PrimaryFontRegular;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: #f5f5f5;
+  font-family: PrimaryFont400;
+}
+
+h1,
+.h1 {
+  font-family: PrimaryFontBold;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: PrimaryFont700;
+}
+
+h2,
+.h2 {
+  font-family: PrimaryFontBold;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: PrimaryFont600;
+}
+
+h3,
+.h3 {
+  font-family: PrimaryFontBold;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: PrimaryFont600;
+}
+
+h4,
+.h4 {
+  font-family: PrimaryFontMedium;
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: PrimaryFont500;
+}
+
+h5,
+.h5 {
+  font-family: PrimaryFontMedium;
+  font-size: 13px;
+  line-height: 1.2;
+  font-family: PrimaryFont500;
+}
+
+h6,
+.h6 {
+  font-family: PrimaryFontMedium;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: PrimaryFont500;
+}
+
+p,
+.p {
+  font-family: PrimaryFontRegular;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: PrimaryFont400;
+}
+
+p.PrimaryFontLight {
+  font-family: PrimaryFontLight;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+span,
+.span {
+  font-family: PrimaryFontLight;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: PrimaryFont400;
+}
+
+a,
+.a {
+  font-family: PrimaryFontRegular;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: PrimaryFont400;
+}
+
+strong,
+b {
+  font-family: PrimaryFontBold;
+  font-family: PrimaryFont600;
+  font-weight: 600;
+}
+
+button {
+  span {
+    font-family: PrimaryFontRegular;
+    font-family: PrimaryFont400;
+  }
+}
+
+a {
+  color: #6631f7;
+}

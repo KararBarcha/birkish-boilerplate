@@ -1,0 +1,118 @@
+<section class="auth new-auth">
+  <div nz-row nzGutter="0">
+    <div
+      nz-col
+      nzXs="24"
+      nzSm="24"
+      nzMd="24"
+      nzLg="10"
+      nzXl="10"
+      nzXXl="10"
+      class="web-only"
+    >
+      <div class="banner">
+        <img src="./assets/images/auth/login.png" alt="Banner" />
+      </div>
+    </div>
+    <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="14" nzXl="14" nzXXl="14">
+      <div class="signinup">
+        <div class="logo">
+          <img src="./assets/images/logo/walee.svg" alt="Walee Logo" />
+        </div>
+        <div class="form">
+          <form autocomplete="off">
+            <h1>
+              Sign Up to
+              <span class="h1">Walee</span>
+            </h1>
+            <p>Use your company email address to get a free Walee account</p>
+            <div nz-row nzGutter="10">
+              <div
+                nz-col
+                nzXs="24"
+                nzSm="24"
+                nzMd="12"
+                nzLg="12"
+                nzXl="12"
+                nzXXl="12"
+              >
+                <nz-form-item>
+                  <nz-form-label>First Name</nz-form-label>
+                  <nz-form-control>
+                    <nz-input-group>
+                      <input type="text" nz-input placeholder="First Name" />
+                    </nz-input-group>
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+              <div
+                nz-col
+                nzXs="24"
+                nzSm="24"
+                nzMd="12"
+                nzLg="12"
+                nzXl="12"
+                nzXXl="12"
+              >
+                <nz-form-item>
+                  <nz-form-label>Last Name</nz-form-label>
+                  <nz-form-control>
+                    <nz-input-group>
+                      <input type="text" nz-input placeholder="Last Name" />
+                    </nz-input-group>
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+            </div>
+
+            <nz-form-item>
+              <nz-form-label>Email</nz-form-label>
+              <nz-form-control>
+                <nz-input-group>
+                  <input nz-input placeholder="Email" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+
+            <nz-form-item>
+              <nz-form-label>Password</nz-form-label>
+              <nz-form-control>
+                <nz-input-group>
+                  <input type="password" nz-input placeholder="Password" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+
+            <div nz-row class="login-form-margin">
+              <div nz-col [nzSpan]="24">
+                <label nz-checkbox> </label>
+                <span>
+                  I agree to Walee's <a class="p">Terms of Services</a> &
+                  understand the personal data will be processed in accordance
+                  with its <a class="p">privacy policy</a>
+                </span>
+              </div>
+            </div>
+            <div nz-row>
+              <button
+                nz-col
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+              >
+                Sign up
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-inup">
+          <p>
+            Already have an account?
+            <a class="link" routerLink="/auth/login"> Log in </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

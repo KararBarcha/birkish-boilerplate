@@ -1,0 +1,731 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  line-height: 1.2;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// ============================================
+
+// cursors
+.cursor-p {
+  cursor: pointer;
+}
+
+// border-radius
+.br-60 {
+  border-radius: 60px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
+.br-6 {
+  border-radius: 6px;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.br-4 {
+  border-radius: 4px;
+}
+
+.br-2 {
+  border-radius: 2px;
+}
+
+.br-1 {
+  border-radius: 1px;
+}
+
+.br-0 {
+  border-radius: 0px;
+}
+
+/* Flex */
+.df {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-non {
+  flex: none;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.fw-w {
+  flex-wrap: wrap;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ac-fs {
+  align-content: flex-start;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+.ai-fs {
+  align-items: flex-start;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.ai-s {
+  align-items: stretch;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.df-16 > * {
+  margin: 0px 8px;
+  width: 100%;
+}
+
+.df-30 > * {
+  margin: 0px 15px;
+  width: 100%;
+}
+
+.df-16 > *:first-child,
+.df-30 > *:first-child {
+  margin-left: 0px;
+}
+
+.df-16 > *:last-child,
+.df-30 > *:last-child {
+  margin-right: 0px;
+}
+
+/* db */
+.db {
+  display: block;
+}
+
+/* Spaces */
+.mx-30 {
+  margin: 0px 30px;
+}
+
+.my-30 {
+  margin: 30px 0px;
+}
+
+.my-15 {
+  margin: 15px 0px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+/* mr */
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* ml */
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+/* Margin top - */
+.mt--5 {
+  margin-top: -5px;
+}
+.mt--10 {
+  margin-top: -10px;
+}
+
+/* Padding */
+.p-0 {
+  padding: 0px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.p-0-10 {
+  padding: 0px 10px;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.py-30 {
+  padding: 30px 0px;
+}
+
+.p-25-15 {
+  padding: 25px 15px;
+}
+
+/* Font Size */
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-42 {
+  font-size: 42px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+/* Font Weight{ */
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-3 {
+  font-weight: 300;
+}
+
+.fw-2 {
+  font-weight: 200;
+}
+
+.fw-1 {
+  font-weight: 100;
+}
+
+// Color
+.clr-000000 {
+  color: #000000;
+}
+
+.clr-111111 {
+  color: #111111;
+}
+
+.clr-ffffff {
+  color: #ffffff;
+}
+
+.clr-808080 {
+  color: #808080;
+}
+
+.clr-6631F7 {
+  color: #6631f7;
+}
+
+.clr-F7316C {
+  color: #f7316c;
+}
+
+// BG Color
+.bgc-f0eafc {
+  background-color: #f0eafc;
+}
+
+/* Width */
+.w-100 {
+  width: 100%;
+}
+
+.cw-100 > * {
+  width: 100%;
+}
+
+.cw-50 > * {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-33 {
+  width: 33.33%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.h-150 {
+  height: 150px;
+}
+
+.bf-cover {
+  object-fit: cover;
+}
+
+/* borders */
+.bdr-0 {
+  border: 0px;
+}
+
+.bdr-b-0 {
+  border-bottom: 0px;
+}
+
+.bdr-t-1 {
+  border-top: 1px solid #ececec;
+}
+
+.bdr-1 {
+  border: 1px solid #000000;
+}
+
+.bdr-ececec {
+  border-color: #ececec;
+}
+
+.bdr-6631F7 {
+  border-color: #6631f7;
+}
+
+// Card body padding
+nz-card.cbp-15 .ant-card-body {
+  padding: 15px;
+}
+
+nz-card.cb-pt-0 .ant-card-body {
+  padding-top: 0px;
+}
+
+nz-card.cb-pb-0 .ant-card-body {
+  padding-bottom: 0px;
+}
+
+nz-card.cbp-0 .ant-card-body {
+  padding: 0px;
+}
+
+nz-card.cbpt-5 .ant-card-body {
+  padding-top: 5px;
+}
+
+// img-name
+.img-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+
+  .media {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .body {
+    h4 {
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* Positions */
+.po-re {
+  position: relative;
+}
+
+.po-ab {
+  position: absolute;
+}
+
+/* Padding in Percentage */
+.pr-5p {
+  padding-right: 5%;
+}
+
+/* <!-- *******************start*************************  */
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-tt-c {
+  text-transform: capitalize;
+}
+/* <!-- ****************end***************** */
+.w-50-i {
+  width: 50% !important;
+}
+
+.fs-12-i {
+  font-size: 12px !important;
+}
+.pb-0-i {
+  padding-bottom: 0px !important;
+}
+.w-33 {
+  width: 33.33% !important;
+}
+/* ================================================ */

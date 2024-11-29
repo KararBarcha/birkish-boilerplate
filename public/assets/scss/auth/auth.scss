@@ -1,0 +1,395 @@
+.auth {
+  background-color: #fff;
+  // overflow: hidden;
+
+  .banner {
+    // background: #6631f7 url("../../../images/others/auth/login.png") no-repeat
+    //   left bottom;
+    // height: 100vh;
+    // background-size: cover;
+    // background-color: #6631f7;
+
+    img {
+      height: 100vh;
+      object-fit: cover;
+      width: 100%;
+      // background-color: #6631f7;
+      background: rgb(62 41 118);
+      background: linear-gradient(0deg, rgb(28 15 63) 0%, rgb(66 44 124) 100%);
+    }
+  }
+
+  .signinup {
+    padding: 5% 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    width: 550px;
+    margin: auto;
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 130px;
+      }
+    }
+
+    .more-info {
+      margin-top: 5px;
+    }
+
+    .form {
+      width: 100%;
+      .ant-form-item {
+        flex-direction: column;
+        // margin-bottom: 15px;
+      }
+      .ant-input-affix-wrapper {
+        height: 53px;
+        border-radius: 5px;
+        input.ant-input {
+          height: 100%;
+        }
+      }
+      .ant-form-item-control {
+        flex: auto;
+      }
+      nz-form-label {
+        margin: 0px !important;
+        text-align: left;
+      }
+      nz-date-picker {
+        width: 100%;
+        height: 53px;
+      }
+      nz-form-label {
+        margin: 0px !important;
+
+        // label {
+        //   height: 42px !important;
+        // }
+      }
+      nz-select {
+        nz-select-top-control {
+          width: 100%;
+          height: 53px;
+          border-radius: 5px;
+        }
+      }
+      .login-form-margin {
+        margin-bottom: 16px;
+      }
+
+      .login-form-forgot {
+        float: right;
+      }
+
+      .login-form-button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        height: 53px;
+        margin-top: 15px;
+        span {
+          font-size: 16px;
+        }
+      }
+      .icon {
+        margin-bottom: 30px;
+        img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        font-family: "PrimaryFont600";
+
+        span.h1 {
+          // color: #ff2e60;
+          font-size: 32px;
+          font-family: "PrimaryFont600";
+
+          span.h1 {
+            // color: #6631f7;
+            font-size: 32px;
+            font-family: "PrimaryFont600";
+          }
+        }
+      }
+
+      i.eye {
+        cursor: pointer;
+      }
+
+      .or {
+        border-bottom: 1px #dadada solid;
+        position: relative;
+        margin: 25px 0px;
+
+        span.space {
+          position: absolute;
+          right: 0;
+          left: 0;
+          text-align: center;
+          padding: 10px;
+          top: -12px;
+
+          span.h5 {
+            position: relative;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 6px 12px;
+            top: -6px;
+            background: whitesmoke;
+            color: #444;
+          }
+        }
+      }
+
+      .social {
+        margin-bottom: 25px;
+
+        .icons-list {
+          text-align: center;
+
+          i {
+            color: #444444;
+            font-size: 24px;
+            margin: 0px 5px;
+
+            &:hover {
+              cursor: pointer;
+              color: #6631f7;
+            }
+          }
+        }
+      }
+
+      nz-form-label.ant-col-24 {
+        margin-bottom: 0;
+        padding-bottom: 0px !important;
+        label {
+          color: #444;
+          font-size: 14px;
+        }
+      }
+
+      p {
+        margin-bottom: 30px;
+        line-height: 1.5;
+        margin-top: 0px;
+      }
+
+      .upload {
+        ng-deep .upload-list-inline .ant-upload-list-item {
+          float: left;
+          width: 200px;
+          margin-right: 8px;
+        }
+
+        ng-deep
+          .upload-list-inline
+          [class*="-upload-list-rtl"]
+          .ant-upload-list-item {
+          float: right;
+        }
+
+        ng-deep .upload-list-inline .ant-upload-animate-enter {
+          animation-name: uploadAnimateInlineIn;
+        }
+
+        ng-deep .upload-list-inline .ant-upload-animate-leave {
+          animation-name: uploadAnimateInlineOut;
+        }
+      }
+      .ant-upload.ant-upload-select {
+        width: 100%;
+        button {
+          height: 53px;
+          width: 100%;
+        }
+      }
+      .mobile {
+        span.ant-input-group-addon {
+          height: 53px;
+        }
+        input.ant-input {
+          height: 53px;
+        }
+      }
+      .ant-input-group {
+        .ant-input {
+          height: 53px;
+          border-radius: 8px;
+        }
+      }
+      .ant-upload-list-picture .ant-upload-list-item,
+      .ant-upload-list-picture-card .ant-upload-list-item {
+        background-color: #e6f7ff;
+      }
+      .ant-input-prefix {
+        margin-right: 8px;
+        color: #252525;
+      }
+      .ant-select-single .ant-select-selector .ant-select-selection-item,
+      .ant-select-single
+        .ant-select-selector
+        .ant-select-selection-placeholder {
+        line-height: 53px;
+      }
+    }
+
+    .sign-inup {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+
+      a.link {
+        font-size: 14px;
+        // font-family: PrimaryFont500;
+        color: #6631f7;
+      }
+    }
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.steps-content {
+  padding-top: 40px;
+  background-color: transparent;
+}
+.ant-steps-item-icon {
+  .ant-steps-icon {
+    font-size: 15px !important;
+    color: #111 !important;
+  }
+}
+.ant-steps-item-process {
+  .ant-steps-item-container {
+    .ant-steps-item-icon {
+      .ant-steps-icon {
+        color: #fff !important;
+      }
+    }
+  }
+}
+.steps-action {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.next-button {
+  background: #6631f7;
+  border-color: #6631f7;
+  color: #fff;
+  &:hover {
+    background: #8d5cff;
+    color: #fff;
+    border-color: #8d5cff;
+  }
+}
+.prev-button {
+  margin-right: 10px;
+}
+.stepper-button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 53px;
+  width: 150px;
+}
+.ant-steps-item-finish {
+  .ant-steps-item-icon {
+    .ant-steps-icon {
+      color: #6631f7 !important;
+    }
+  }
+}
+
+.auth {
+  .multiselect-dropdown .dropdown-btn {
+    position: relative !important;
+    background-color: #fff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 6px !important;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+    height: 53px !important;
+    padding: 17px 10px !important;
+  }
+  .multiselect-dropdown .dropdown-btn .dropdown-multiselect__caret {
+    right: -4px !important;
+    top: 6px !important;
+  }
+  .multiselect-item-checkbox input[type="checkbox"] + div:before {
+    content: "";
+    color: #6631f7 !important;
+    border: 2px solid #6631f7 !important;
+  }
+  .multiselect-item-checkbox input[type="checkbox"]:checked + div:before {
+    background: #6631f7 !important;
+  }
+  .multiselect-dropdown .dropdown-btn .selected-item-container .selected-item {
+    border: 1px solid #6631f7 !important;
+    margin-right: 4px !important;
+    background: #6631f7 !important;
+  }
+}
+
+.dropdown-list {
+  bottom: 100% !important;
+}
+@media (max-width: 768px) {
+  .auth {
+    background-color: #fff;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0px 16px;
+    .signinup {
+      width: 100%;
+      .form h1,
+      span.h1 {
+        font-size: 22px !important;
+      }
+    }
+  }
+}
+
+// ===================================== new-auth ============================
+.new-auth {
+  nz-form-item.type {
+    nz-radio-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        padding: 14px 22px;
+        border-radius: 5px;
+        border: 1px #d9d9d9 solid;
+        width: 49%;
+        margin: 0px;
+      }
+    }
+  }
+}

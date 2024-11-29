@@ -1,0 +1,98 @@
+<section class="auth">
+  <div nz-row nzGutter="0">
+    <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzXXl="24">
+      <!-- Verify Email Start -->
+      <div class="signinup">
+        <div class="logo">
+          <img src="./assets/images/logo/walee.svg" alt="Walee Logo" />
+        </div>
+        <div class="form">
+          <div class="icon">
+            <img
+              src="./assets/images/auth/verify-email.png"
+              alt="Verify Email"
+            />
+          </div>
+          <h1>
+            Verify Your
+            <span class="h1">Email</span>
+          </h1>
+          <p>
+            A verification email has been sent to
+            <a class="p">john.doe example.com</a>. Please verify your email to
+            continue.
+          </p>
+          <form class="login-form">
+            <div nz-row>
+              <button
+                nz-col
+                [nzSpan]="24"
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+              >
+                Open email
+              </button>
+            </div>
+            <div nz-row>
+              <div class="more-info">
+                <p>
+                  Didn’t receive the email?
+                  <a class="p">Click to resend</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-inup">
+          <p>
+            Back to
+            <a class="p" href="/auth/login">Sign in</a>
+          </p>
+        </div>
+      </div>
+      <!-- Verify Email End -->
+
+      <!-- Email Verified Start -->
+
+      <div class="signinup">
+        <div class="logo">
+          <img src="./assets/images/logo/walee.svg" alt="Walee Logo" />
+        </div>
+        <div class="form">
+          <div class="icon">
+            <img
+              src="./assets/images/auth/email-verified.png"
+              alt="Email Verified"
+            />
+          </div>
+          <h1>
+            Email
+            <span class="h1">Verified</span>
+          </h1>
+          <p>Your email has successfully been verified.</p>
+          <form class="login-form">
+            <div nz-row>
+              <button
+                nz-col
+                [nzSpan]="24"
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+                onclick="window.location.href='/auth/login';"
+              >
+                Continue
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-inup">
+          <!-- No extra links here -->
+        </div>
+      </div>
+      <!-- Email Verified End -->
+    </div>
+  </div>
+</section>

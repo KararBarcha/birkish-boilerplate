@@ -1,0 +1,128 @@
+<section class="auth">
+  <div nz-row nzGutter="0">
+    <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" nzXXl="24">
+      <!-- Reset Start -->
+      <div class="signinup">
+        <div class="logo">
+          <img src="./assets/images/logo/walee.svg" alt="Walee Logo" />
+        </div>
+
+        <div class="form">
+          <div class="icon">
+            <img
+              src="./assets/images/auth/forgot-password.png"
+              alt="Forgot Password"
+            />
+          </div>
+          <h1>
+            Change
+            <span class="h1">Password</span>
+          </h1>
+          <p>
+            In order to <span class="h4">protect your account,</span> make sure
+            your password:
+          </p>
+          <ul>
+            <li><p>Is longer than 8 characters</p></li>
+            <li>
+              <p>
+                Does not match or significantly contain your username, e.g. do
+                not use ‘username123’.
+              </p>
+            </li>
+          </ul>
+          <form class="login-form">
+            <nz-form-item>
+              <nz-form-label nzFor="email">New Password</nz-form-label>
+              <nz-form-control nzErrorTip="Please input your Password!">
+                <nz-input-group [nzSuffix]="suffixTemplate">
+                  <input type="password" nz-input placeholder="Password" />
+                </nz-input-group>
+                <ng-template #suffixTemplate>
+                  <i class="eye" nz-icon [nzType]="'eye-invisible'"></i>
+                </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-label nzFor="email">Re-enter New Password</nz-form-label>
+              <nz-form-control nzErrorTip="Please input your Password!">
+                <nz-input-group [nzSuffix]="suffixTemplate">
+                  <input
+                    type="password"
+                    nz-input
+                    placeholder="Re-enter Password"
+                  />
+                </nz-input-group>
+                <ng-template #suffixTemplate>
+                  <i class="eye" nz-icon [nzType]="'eye-invisible'"></i>
+                </ng-template>
+              </nz-form-control>
+            </nz-form-item>
+
+            <div nz-row>
+              <button
+                nz-col
+                [nzSpan]="24"
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+              >
+                Change Password
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-inup">
+          <p>
+            Already have an account?
+            <a class="p" href="/auth/login">Sign in</a>
+          </p>
+        </div>
+      </div>
+      <!-- Reset End -->
+
+      <!-- Successfully Reset Start -->
+      <div class="signinup">
+        <div class="logo">
+          <img src="./assets/images/logo/walee.svg" alt="Walee Logo" />
+        </div>
+
+        <div class="form">
+          <div class="icon">
+            <img
+              src="./assets/images/auth/successfully-reset.png"
+              alt="Password Reset Successful"
+            />
+          </div>
+          <h1>
+            Password
+            <span class="h1">Reset</span>
+          </h1>
+          <p>
+            Your password has been successfully reset. Click below to log in.
+          </p>
+          <form class="login-form">
+            <div nz-row>
+              <button
+                nz-col
+                [nzSpan]="24"
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+                href="/auth/login"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-inup">
+          <p></p>
+        </div>
+      </div>
+      <!-- Successfully Reset End -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,107 @@
+<section class="auth">
+  <div nz-row nzGutter="0">
+    <div
+      nz-col
+      nzXs="24"
+      nzSm="24"
+      nzMd="24"
+      nzLg="10"
+      nzXl="10"
+      nzXXl="10"
+      class="web-only"
+    >
+      <div class="banner">
+        <img src="./assets/images/auth/login.png" alt="Banner" />
+      </div>
+    </div>
+    <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="14" nzXl="14" nzXXl="14">
+      <div class="signinup">
+        <div class="logo">
+          <img src="./assets/images/logo/walee.svg" alt="Walee Logo" />
+        </div>
+
+        <!-- Forgot Password Start -->
+        <div class="form">
+          <div class="icon">
+            <img
+              src="assets/images/auth/forgot-password.png"
+              alt="Forgot Password"
+            />
+          </div>
+          <h1>
+            Forgot
+            <span class="h1">Password?</span>
+          </h1>
+          <p>No worries, we’ll send you reset instructions.</p>
+          <form class="login-form">
+            <nz-form-item>
+              <nz-form-label nzFor="email">Email</nz-form-label>
+              <nz-form-control>
+                <nz-input-group>
+                  <input type="text" nz-input placeholder="Email" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+
+            <div nz-row>
+              <button
+                nz-col
+                [nzSpan]="24"
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+              >
+                Reset Password
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Forgot Password End -->
+
+        <!-- Check Mail Start -->
+        <div class="form">
+          <div class="icon">
+            <img src="assets/images/auth/verify-email.png" alt="Check Email" />
+          </div>
+          <h1>
+            Check your
+            <span class="h1">Email</span>
+          </h1>
+          <p>
+            We sent a password reset link to
+            <a class="p">john gmail.com</a>
+          </p>
+          <form class="login-form">
+            <div nz-row>
+              <button
+                nz-col
+                [nzSpan]="24"
+                nz-button
+                class="login-form-button"
+                [nzType]="'primary'"
+              >
+                Open email
+              </button>
+            </div>
+            <div nz-row>
+              <div class="more-info">
+                <p>
+                  Didn’t receive the email?
+                  <a class="p">Click to resend</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Check Mail End -->
+
+        <div class="sign-inup">
+          <p>
+            Already have an account?
+            <a class="p" routerLink="/auth/login">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
